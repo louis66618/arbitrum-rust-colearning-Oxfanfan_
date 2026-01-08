@@ -1,56 +1,44 @@
 # arbitrum-rust-colearning-louis
 HighQuest Arbitrum的共学营学习项目
 
+# arbitrum-rust-colearning-louis
+> HighQuest Arbitrum 共学营学习项目实践记录
+
+---
+
 ## 🚀 任务进度 (Task Progress)
 
 - [x] **Task-1: Hello Web3 - 环境搭建与基础链上连接**
-- [ ] Task-2: Rust 基础与 Arbitrum 合约交互 (Pending)
-- [ ] Task-3: Stylus 合约开发实战 (Pending)
+- [ ] Task-2: Rust 基础与 Arbitrum 合约交互
+- [ ] Task-3: Stylus 合约开发实战
 
 ---
 
-## 🛠 Task-1 实践记录：环境搭建
+## 🛠 Task-1 实践笔记
 
-在 Task-1 的过程中，由于网络环境（VPN）等因素遇到了一些连接挑战，以下是解决方案：
+在搭建 Arbitrum Sepolia 测试网环境时，由于网络环境（VPN）限制，遇到并解决了以下问题：
 
-### 1. 网络配置 (Arbitrum Sepolia Testnet)
+### 1. 钱包网络配置
+* **痛点**：通过 `chainlist.org` 自动添加网络时，受 VPN 影响，MetaMask 往往无法弹出确认框。
+* **对策**：采用手动配置 RPC 参数。
+    * **Chain ID**: `421614`
+    * **RPC URL**: `https://endpoints.omniatech.io/v1/arbitrum/sepolia/public`
+    * **Explorer**: [https://sepolia.arbiscan.io](https://sepolia.arbiscan.io)
+> **相关截图：**
+![Gemini 咨询与参数确认](./docs/metamask_setup.png)
 
-**问题描述：** 在使用 [Chainlist](https://chainlist.org/) 自动添加 Arbitrum Sepolia 网络时，由于 VPN 代理或网络波动，MetaMask 往往无法正常响应弹出请求。
+### 2. 测试币申领 (Faucet)
+* **Alchemy 限制**：领水页面因 IP 识别问题多次失败。
+* **成功路径**：使用 [Sepolia PoW Faucet](https://sepolia-faucet.pk910.de/) 通过本地算力挖矿获得 L1 Sepolia ETH，随后通过 [Arbitrum Bridge](https://bridge.arbitrum.io/) 成功跨链至 L2。
+> **相关截图：**
+![挖矿操作记录](./docs/sepolia_faucet_mining.png)
+![跨链操作记录](./docs/faucet_bridge.png)
 
-**解决方案：** 通过 MetaMask 设置手动添加自定义 RPC。以下是经过验证的配置参数：
-
-| 参数名 | 取值 |
-| :--- | :--- |
-| **Network Name** | Arbitrum Sepolia |
-| **New RPC URL** | `https://endpoints.omniatech.io/v1/arbitrum/sepolia/public` |
-| **Chain ID** | `421614` |
-| **Currency Symbol** | ETH |
-| **Block Explorer** | [https://sepolia.arbiscan.io](https://sepolia.arbiscan.io) |
-
-> **💡 笔记：** 手动输入参数不仅能避开 Chainlist 的前端响应问题，还能更直观地理解 L2 网络的链参数。
-
----
-
-### 2. 测试币申领 (Faucet) 与跨链
-
-**踩坑记录：** * **Alchemy Faucet:** 即使使用了 VPN，Alchemy 领水页面仍可能因为 IP 或账户限制导致领水失败。
-* **PoW 方案 (成功案例):** 最终采用了 [Sepolia PoW Faucet](https://sepolia-faucet.pk910.de/)。通过本地算力挖矿获取 Sepolia L1 ETH。
-
-**跨链操作：** 获取 L1 测试币后，通过官方 [Arbitrum Bridge](https://bridge.arbitrum.io/) 将资金从 Sepolia 跨链至 Arbitrum Sepolia。
-
-> **✅ 状态确认：** 已成功获取测试币，钱包余额已更新，环境准备就绪。
+## 📁 仓库说明
+* **/docs**: 存放任务相关的操作截图及详细说明文档。
+* **LICENSE**: 本项目采用 MIT 开源许可证。
 
 ---
 
-## 📁 项目结构说明
-* `/docs`: 学习笔记与截图
-* `/src`: 任务相关的 Rust 代码或脚本
-
----
-
-## 📜 许可证
-[MIT](LICENSE)
-
-
-
-
+## 📜 许可证 (License)
+本项目采用 **MIT License**。详情请参阅 [LICENSE](LICENSE) 文件。
