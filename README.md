@@ -6,7 +6,7 @@ HackQuest Arbitrum的共学营学习项目
 ## 🚀 任务进度 (Task Progress)
 
 - [x] **Task-1: Hello Web3 - 环境搭建与基础链上连接**
-- [ ] Task-2: Rust 基础与 Arbitrum 合约交互
+- [x] **Task-2: Rust 基础与 Arbitrum 合约交互**
 - [ ] Task-3: Stylus 合约开发实战
 
 ---
@@ -22,22 +22,22 @@ HackQuest Arbitrum的共学营学习项目
     * **RPC URL**: `https://endpoints.omniatech.io/v1/arbitrum/sepolia/public`
     * **Explorer**: [https://sepolia.arbiscan.io](https://sepolia.arbiscan.io)
 > **相关截图：**
-![Gemini咨询与参数确认](./docs/metamask_setup.png)
+![Gemini咨询与参数确认](./docs/task/metamask_setup.png)
 
 ### 2. 测试币申领 (Faucet)
 * **Alchemy 限制**：领水页面因 IP 识别问题多次失败。
 * **成功路径**：使用 [Sepolia PoW Faucet](https://sepolia-faucet.pk910.de/) 通过本地算力挖矿获得 L1 Sepolia ETH，随后通过 [Arbitrum Bridge](https://bridge.arbitrum.io/) 成功跨链至 L2。
 > **相关截图：**
-![挖矿操作记录](./docs/sepolia_faucet_mining.png)
-![跨链操作记录](./docs/faucet_bridge.png)
+![挖矿操作记录](./docs/task/sepolia_faucet_mining.png)
+![跨链操作记录](./docs/task/faucet_bridge.png)
 
 ### 3. Rust 与 C++ 编译环境安装 (Windows 11)
 * **环境安装**：通过 Windows 官方包管理器 `winget` 一键安装 Rust 工具链：`winget install Rustlang.Rustup`。
 * **解决 C++ 依赖 (Critical)**：Rust 在 Windows 编译 `ethers` 等 Web3 库时依赖 C++ 生成工具。通过手动安装 **Visual Studio Build Tools 2022** 并勾选 **“使用 C++ 的桌面开发”** 工作负载，成功解决了 `Linker` 缺失导致的编译错误，安装好后重启电脑。
 > **相关截图：**
-![Gemini咨询与命令确认](./docs/fast_command_install.png)
-![验证环境是否安装成功](./docs/rust_env_check.png)
-![C++依赖缺失](./docs/build_error_msvc.png)
+![Gemini咨询与命令确认](./docs/task/fast_command_install.png)
+![验证环境是否安装成功](./docs/task/rust_env_check.png)
+![C++依赖缺失](./docs/task/build_error_msvc.png)
 
 ### 4. Hello Web3 代码实现与排坑
 * **RPC 限流 (429 Error)**：初次运行程序时，由于公共 RPC 节点（Omniatech）限流，导致 `Too many requests` 报错。
@@ -46,7 +46,25 @@ HackQuest Arbitrum的共学营学习项目
   > 🚀 恭喜！Hello Web3 运行成功！  
   > 📍 当前 Arbitrum Sepolia 的最新区块高度是: 23168096
 > **相关截图：**
-![hello_web3运行成功](./docs/hello_web3_success.png)
+![hello_web3运行成功](./docs/task/hello_web3_success.png)
+
+---
+
+## 🛠 Task-2 实践笔记：查询 Arbitrum 测试网地址余额
+
+### 1. 功能实现
+* **核心逻辑**：编写 Rust 函数，通过 `ethers-rs` 库连接 Arbitrum Sepolia 节点，查询指定地址的 ETH 余额。
+* **单位转换**：利用 `ethers::utils::format_ether` 将余额从 **wei** 转换为可读的 **ETH** 格式。
+
+### 2. 编译排坑
+* **报错处理**：初次编译遇到 `use of unresolved module or unlinked crate utils` 错误。
+* **解决**：确认 `utils` 是 `ethers` 的子模块，通过 `use ethers::utils;` 导入后解决。
+
+### 3. 运行结果验证
+* **查询地址**：`0xa8ff167e4f362b54ff612546a782a301bd521a0b`
+* **查询余额**：约 `0.337 ETH`
+* **相关截图**：
+![Task-2 运行成功截图](docs/task2/balance_result.png)
 
 ---
 

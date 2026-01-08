@@ -1,0 +1,12 @@
+[package]
+name = "level2-balance-query"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# ethers 库：包含 Provider 和单位转换工具
+ethers = { version = "2.0", features = ["rustls"] }
+# 异步运行时
+tokio = { version = "1.0", features = ["full"] }
+# 错误处理
+eyre = "0.6"

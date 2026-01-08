@@ -1,0 +1,20 @@
+# --- Rust 相关 ---
+# 忽略编译产物文件夹（最占用空间，且会导致推送失败）
+target/
+**/target/
+
+# 忽略 Cargo 自动生成的临时文件
+Cargo.lock
+
+# --- Windows & 编译调试相关 ---
+# 忽略导致 100MB 报错的调试数据库文件
+*.pdb
+*.exe
+*.dll
+*.rlib
+
+# --- 个人文件 ---
+# 忽略你之前保留在根目录的安装包
+rustup-init.exe
+.DS_Store
+.vscode/

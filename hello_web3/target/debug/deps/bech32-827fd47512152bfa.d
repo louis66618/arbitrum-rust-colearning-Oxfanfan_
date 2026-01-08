@@ -1,7 +1,0 @@
-E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug\deps\bech32-827fd47512152bfa.d: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bech32-0.9.1\src\lib.rs
-
-E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug\deps\libbech32-827fd47512152bfa.rlib: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bech32-0.9.1\src\lib.rs
-
-E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug\deps\libbech32-827fd47512152bfa.rmeta: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bech32-0.9.1\src\lib.rs
-
-C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bech32-0.9.1\src\lib.rs:

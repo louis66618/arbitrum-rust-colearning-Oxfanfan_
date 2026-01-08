@@ -1,9 +1,0 @@
-E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug\deps\auto_impl-c044aa0f3f29527b.d: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\auto_impl-1.3.0\src\lib.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\auto_impl-1.3.0\src\analyze.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\auto_impl-1.3.0\src\attr.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\auto_impl-1.3.0\src\gen.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\auto_impl-1.3.0\src\proxy.rs
-
-E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug\deps\auto_impl-c044aa0f3f29527b.dll: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\auto_impl-1.3.0\src\lib.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\auto_impl-1.3.0\src\analyze.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\auto_impl-1.3.0\src\attr.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\auto_impl-1.3.0\src\gen.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\auto_impl-1.3.0\src\proxy.rs
-
-C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\auto_impl-1.3.0\src\lib.rs:
-C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\auto_impl-1.3.0\src\analyze.rs:
-C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\auto_impl-1.3.0\src\attr.rs:
-C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\auto_impl-1.3.0\src\gen.rs:
-C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\auto_impl-1.3.0\src\proxy.rs:
