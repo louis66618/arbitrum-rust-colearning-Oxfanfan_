@@ -1,8 +1,5 @@
 # arbitrum-rust-colearning-louis
-HighQuest Arbitrum的共学营学习项目
-
-# arbitrum-rust-colearning-louis
-> HighQuest Arbitrum 共学营学习项目实践记录
+HackQuest Arbitrum的共学营学习项目
 
 ---
 
