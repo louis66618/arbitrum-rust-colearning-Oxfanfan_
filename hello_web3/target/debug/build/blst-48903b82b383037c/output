@@ -1,0 +1,146 @@
+cargo:rustc-cfg=feature="std"
+cargo:rerun-if-env-changed=BLST_TEST_NO_STD
+Using blst source directory C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\blst-0.3.16\blst
+cargo:rerun-if-changed=C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\blst-0.3.16\blst\src
+cargo:rerun-if-changed=C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\blst-0.3.16\blst\build
+OPT_LEVEL = Some(0)
+OUT_DIR = Some(E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug\build\blst-48903b82b383037c\out)
+TARGET = Some(x86_64-pc-windows-msvc)
+CARGO_ENCODED_RUSTFLAGS = Some()
+cargo:rerun-if-env-changed=VCINSTALLDIR
+VCINSTALLDIR = None
+cargo:rerun-if-env-changed=VSTEL_MSBuildProjectFullPath
+VSTEL_MSBuildProjectFullPath = None
+cargo:rerun-if-env-changed=VCToolsVersion
+VCToolsVersion = None
+cargo:rerun-if-env-changed=VSCMD_ARG_VCVARS_SPECTRE
+VSCMD_ARG_VCVARS_SPECTRE = None
+cargo:rerun-if-env-changed=WindowsSdkDir
+WindowsSdkDir = None
+cargo:rerun-if-env-changed=WindowsSDKVersion
+WindowsSDKVersion = None
+cargo:rerun-if-env-changed=LIB
+LIB = None
+PATH = Some(E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug\deps;E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug;C:\Users\27894\.rustup\toolchains\stable-x86_64-pc-windows-msvc\lib\rustlib\x86_64-pc-windows-msvc\lib;c:\Users\27894\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\27894\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;D:\Git\cmd;D:\Lingma\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\cursor\resources\app\bin;C:\Users\27894\.cargo\bin;C:\Users\27894\scoop\shims;D:\annaconda3;D:\annaconda3\Library\mingw-w64\bin;D:\annaconda3\Library\usr\bin;D:\annaconda3\Library\bin;D:\annaconda3\Scripts;d:\Trae CN\bin;C:\Users\27894\AppData\Local\Microsoft\WindowsApps;D:\PyCharm 2025.1.3.1\bin;D:\Microsoft VS Code\bin;D:\Windsurf\bin;C:\Windows\System32\Wbem;C:\Users\27894\AppData\Local\Programs\Ollama;C:\Users\27894\AppData\Local\Project Graph;C:\Users\27894\AppData\Roaming\npm;C:\Users\27894\AppData\Local\GitHubDesktop\bin;C:\Users\27894\AppData\Local\Programs\Kiro\bin;D:\Antigravity\bin;C:\Users\27894\.rustup\toolchains\stable-x86_64-pc-windows-msvc\bin)
+cargo:rerun-if-env-changed=INCLUDE
+INCLUDE = None
+HOST = Some(x86_64-pc-windows-msvc)
+cargo:rerun-if-env-changed=CC_x86_64-pc-windows-msvc
+CC_x86_64-pc-windows-msvc = None
+cargo:rerun-if-env-changed=CC_x86_64_pc_windows_msvc
+CC_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=HOST_CC
+HOST_CC = None
+cargo:rerun-if-env-changed=CC
+CC = None
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+CARGO_CFG_TARGET_FEATURE = Some(cmpxchg16b,fxsr,sse,sse2,sse3)
+DEBUG = Some(true)
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64_pc_windows_msvc
+CFLAGS_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64-pc-windows-msvc
+CFLAGS_x86_64-pc-windows-msvc = None
+Enabling ADX because it was detected on the host
+OUT_DIR = Some(E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug\build\blst-48903b82b383037c\out)
+cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+TARGET = Some(x86_64-pc-windows-msvc)
+CARGO_CFG_TARGET_FEATURE = Some(cmpxchg16b,fxsr,sse,sse2,sse3)
+HOST = Some(x86_64-pc-windows-msvc)
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64_pc_windows_msvc
+CFLAGS_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64-pc-windows-msvc
+CFLAGS_x86_64-pc-windows-msvc = None
+OUT_DIR = Some(E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug\build\blst-48903b82b383037c\out)
+cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+TARGET = Some(x86_64-pc-windows-msvc)
+CARGO_CFG_TARGET_FEATURE = Some(cmpxchg16b,fxsr,sse,sse2,sse3)
+HOST = Some(x86_64-pc-windows-msvc)
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64_pc_windows_msvc
+CFLAGS_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64-pc-windows-msvc
+CFLAGS_x86_64-pc-windows-msvc = None
+OUT_DIR = Some(E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug\build\blst-48903b82b383037c\out)
+cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+TARGET = Some(x86_64-pc-windows-msvc)
+CARGO_CFG_TARGET_FEATURE = Some(cmpxchg16b,fxsr,sse,sse2,sse3)
+HOST = Some(x86_64-pc-windows-msvc)
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64_pc_windows_msvc
+CFLAGS_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64-pc-windows-msvc
+CFLAGS_x86_64-pc-windows-msvc = None
+OUT_DIR = Some(E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug\build\blst-48903b82b383037c\out)
+cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+TARGET = Some(x86_64-pc-windows-msvc)
+CARGO_CFG_TARGET_FEATURE = Some(cmpxchg16b,fxsr,sse,sse2,sse3)
+HOST = Some(x86_64-pc-windows-msvc)
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64_pc_windows_msvc
+CFLAGS_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64-pc-windows-msvc
+CFLAGS_x86_64-pc-windows-msvc = None
+cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+server.c
+C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\blst-0.3.16\blst\src\vect.h(314): warning C4210: 使用了非标准扩展: 函数给定文件范围
+C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\blst-0.3.16\blst\src\vect.h(335): warning C4210: 使用了非标准扩展: 函数给定文件范围
+C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\blst-0.3.16\blst\src\bulk_addition.c(1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+ Assembling: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\blst-0.3.16\blst\build\win64\add_mod_256-x86_64.asm
+ Assembling: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\blst-0.3.16\blst\build\win64\add_mod_384-x86_64.asm
+ Assembling: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\blst-0.3.16\blst\build\win64\add_mod_384x384-x86_64.asm
+ Assembling: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\blst-0.3.16\blst\build\win64\ct_inverse_mod_256-x86_64.asm
+ Assembling: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\blst-0.3.16\blst\build\win64\ct_is_square_mod_384-x86_64.asm
+ Assembling: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\blst-0.3.16\blst\build\win64\ctq_inverse_mod_384-x86_64.asm
+ Assembling: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\blst-0.3.16\blst\build\win64\ctx_inverse_mod_384-x86_64.asm
+ Assembling: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\blst-0.3.16\blst\build\win64\div3w-x86_64.asm
+ Assembling: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\blst-0.3.16\blst\build\win64\mulq_mont_256-x86_64.asm
+ Assembling: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\blst-0.3.16\blst\build\win64\mulq_mont_384-x86_64.asm
+ Assembling: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\blst-0.3.16\blst\build\win64\mulx_mont_256-x86_64.asm
+ Assembling: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\blst-0.3.16\blst\build\win64\mulx_mont_384-x86_64.asm
+ Assembling: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\blst-0.3.16\blst\build\win64\sha256-x86_64.asm
+cargo:rerun-if-env-changed=AR_x86_64-pc-windows-msvc
+AR_x86_64-pc-windows-msvc = None
+cargo:rerun-if-env-changed=AR_x86_64_pc_windows_msvc
+AR_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=HOST_AR
+HOST_AR = None
+cargo:rerun-if-env-changed=AR
+AR = None
+cargo:rerun-if-env-changed=ARFLAGS
+ARFLAGS = None
+cargo:rerun-if-env-changed=HOST_ARFLAGS
+HOST_ARFLAGS = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64_pc_windows_msvc
+ARFLAGS_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64-pc-windows-msvc
+ARFLAGS_x86_64-pc-windows-msvc = None
+cargo:rustc-link-lib=static=blst
+cargo:rustc-link-search=native=E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug\build\blst-48903b82b383037c\out
+cargo:BINDINGS=C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\blst-0.3.16\blst\bindings
+cargo:C_SRC=C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\blst-0.3.16\blst\src

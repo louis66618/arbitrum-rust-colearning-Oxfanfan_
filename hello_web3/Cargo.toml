@@ -4,11 +4,13 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-# ethers: 用于连接 Arbitrum/以太坊。rustls 特性可以避免在 Windows 上因缺失 OpenSSL 而报错。
-ethers = { version = "2.0", features = ["rustls"] }
+# alloy 核心库：提供 Provider 和 RPC 连接能力
+# features = ["full"] 开启了包括 Http, PubSub, Signer 在内的完整功能
+alloy = { version = "0.1", features = ["full"] }
 
-# tokio: 因为区块链交互是网络请求，需要异步运行环境。
-tokio = { version = "1", features = ["full"] }
+# tokio 是 Rust 生态中最主流的异步运行时
+# 访问链上数据是网络 IO 操作，必须在异步环境下运行
+tokio = { version = "1.0", features = ["full"] }
 
-# eyre: 一个简单好用的错误报告库，能让你看清哪里出错了。
+# eyre 用于更优雅的错误处理，它能提供比标准库更详细的报错堆栈
 eyre = "0.6"

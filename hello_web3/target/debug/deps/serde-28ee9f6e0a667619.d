@@ -1,0 +1,14 @@
+E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug\deps\serde-28ee9f6e0a667619.d: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug\build\serde-48166ab98eeaf37e\out/private.rs
+
+E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug\deps\libserde-28ee9f6e0a667619.rlib: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug\build\serde-48166ab98eeaf37e\out/private.rs
+
+E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug\deps\libserde-28ee9f6e0a667619.rmeta: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug\build\serde-48166ab98eeaf37e\out/private.rs
+
+C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs:
+C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs:
+C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs:
+C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs:
+C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs:
+E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug\build\serde-48166ab98eeaf37e\out/private.rs:
+
+# env-dep:OUT_DIR=E:\\VScode\\arbitrum-rust-colearning-Oxfanfan_\\hello_web3\\target\\debug\\build\\serde-48166ab98eeaf37e\\out

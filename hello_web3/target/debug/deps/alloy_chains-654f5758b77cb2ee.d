@@ -1,0 +1,11 @@
+E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug\deps\alloy_chains-654f5758b77cb2ee.d: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\alloy-chains-0.1.69\src\lib.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\alloy-chains-0.1.69\src\chain.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\alloy-chains-0.1.69\src\named.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\alloy-chains-0.1.69\src\spec.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\alloy-chains-0.1.69\src\../README.md
+
+E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug\deps\liballoy_chains-654f5758b77cb2ee.rlib: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\alloy-chains-0.1.69\src\lib.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\alloy-chains-0.1.69\src\chain.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\alloy-chains-0.1.69\src\named.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\alloy-chains-0.1.69\src\spec.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\alloy-chains-0.1.69\src\../README.md
+
+E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug\deps\liballoy_chains-654f5758b77cb2ee.rmeta: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\alloy-chains-0.1.69\src\lib.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\alloy-chains-0.1.69\src\chain.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\alloy-chains-0.1.69\src\named.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\alloy-chains-0.1.69\src\spec.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\alloy-chains-0.1.69\src\../README.md
+
+C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\alloy-chains-0.1.69\src\lib.rs:
+C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\alloy-chains-0.1.69\src\chain.rs:
+C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\alloy-chains-0.1.69\src\named.rs:
+C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\alloy-chains-0.1.69\src\spec.rs:
+C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\alloy-chains-0.1.69\src\../README.md:
