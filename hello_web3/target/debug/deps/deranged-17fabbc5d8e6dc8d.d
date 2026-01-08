@@ -1,0 +1,8 @@
+E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug\deps\deranged-17fabbc5d8e6dc8d.d: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\deranged-0.5.5\src\lib.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\deranged-0.5.5\src\unsafe_wrapper.rs
+
+E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug\deps\libderanged-17fabbc5d8e6dc8d.rlib: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\deranged-0.5.5\src\lib.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\deranged-0.5.5\src\unsafe_wrapper.rs
+
+E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug\deps\libderanged-17fabbc5d8e6dc8d.rmeta: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\deranged-0.5.5\src\lib.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\deranged-0.5.5\src\unsafe_wrapper.rs
+
+C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\deranged-0.5.5\src\lib.rs:
+C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\deranged-0.5.5\src\unsafe_wrapper.rs:

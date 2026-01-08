@@ -1,0 +1,9 @@
+E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug\deps\tracing_futures-8b54b748651f6aad.d: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tracing-futures-0.2.5\src\lib.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tracing-futures-0.2.5\src\stdlib.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tracing-futures-0.2.5\src\executor\mod.rs
+
+E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug\deps\libtracing_futures-8b54b748651f6aad.rlib: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tracing-futures-0.2.5\src\lib.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tracing-futures-0.2.5\src\stdlib.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tracing-futures-0.2.5\src\executor\mod.rs
+
+E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug\deps\libtracing_futures-8b54b748651f6aad.rmeta: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tracing-futures-0.2.5\src\lib.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tracing-futures-0.2.5\src\stdlib.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tracing-futures-0.2.5\src\executor\mod.rs
+
+C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tracing-futures-0.2.5\src\lib.rs:
+C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tracing-futures-0.2.5\src\stdlib.rs:
+C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tracing-futures-0.2.5\src\executor\mod.rs:

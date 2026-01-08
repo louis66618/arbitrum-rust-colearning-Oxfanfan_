@@ -1,0 +1,12 @@
+E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug\deps\rlp-d243afeee844d999.d: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rlp-0.5.2\src\lib.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rlp-0.5.2\src\error.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rlp-0.5.2\src\impls.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rlp-0.5.2\src\rlpin.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rlp-0.5.2\src\stream.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rlp-0.5.2\src\traits.rs
+
+E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug\deps\librlp-d243afeee844d999.rlib: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rlp-0.5.2\src\lib.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rlp-0.5.2\src\error.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rlp-0.5.2\src\impls.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rlp-0.5.2\src\rlpin.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rlp-0.5.2\src\stream.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rlp-0.5.2\src\traits.rs
+
+E:\VScode\arbitrum-rust-colearning-Oxfanfan_\hello_web3\target\debug\deps\librlp-d243afeee844d999.rmeta: C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rlp-0.5.2\src\lib.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rlp-0.5.2\src\error.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rlp-0.5.2\src\impls.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rlp-0.5.2\src\rlpin.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rlp-0.5.2\src\stream.rs C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rlp-0.5.2\src\traits.rs
+
+C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rlp-0.5.2\src\lib.rs:
+C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rlp-0.5.2\src\error.rs:
+C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rlp-0.5.2\src\impls.rs:
+C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rlp-0.5.2\src\rlpin.rs:
+C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rlp-0.5.2\src\stream.rs:
+C:\Users\27894\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rlp-0.5.2\src\traits.rs:

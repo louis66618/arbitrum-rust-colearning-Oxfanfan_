@@ -1,0 +1,14 @@
+[package]
+name = "hello_web3"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# ethers: 用于连接 Arbitrum/以太坊。rustls 特性可以避免在 Windows 上因缺失 OpenSSL 而报错。
+ethers = { version = "2.0", features = ["rustls"] }
+
+# tokio: 因为区块链交互是网络请求，需要异步运行环境。
+tokio = { version = "1", features = ["full"] }
+
+# eyre: 一个简单好用的错误报告库，能让你看清哪里出错了。
+eyre = "0.6"
