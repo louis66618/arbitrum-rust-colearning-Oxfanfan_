@@ -6,8 +6,8 @@ HackQuest Arbitrum的共学营学习项目
 ## 🚀 任务进度 (Task Progress)
 
 - [x] **Task-1: Hello Web3 - 环境搭建与基础链上连接**
-- [x] **Task-2: Rust 基础与 Arbitrum 合约交互**
-- [ ] Task-3: Stylus 合约开发实战
+- [x] **Task-2: 查询 Arbitrum 测试网地址余额**
+- [x] **Task-3: 计算 Arbitrum 转账 Gas 费用**
 
 ---
 
@@ -22,7 +22,7 @@ HackQuest Arbitrum的共学营学习项目
     * **RPC URL**: `https://endpoints.omniatech.io/v1/arbitrum/sepolia/public`
     * **Explorer**: [https://sepolia.arbiscan.io](https://sepolia.arbiscan.io)
 > **相关截图：**
-![Gemini咨询与参数确认](./docs/task1/metamask_setup.png)
+![测试网参数确认](./docs/task1/metamask_setup.png)
 
 ### 2. 测试币申领 (Faucet)
 * **Alchemy 限制**：领水页面因 IP 识别问题多次失败。
@@ -68,9 +68,29 @@ HackQuest Arbitrum的共学营学习项目
 
 ---
 
+## 🛠 Task-3 实践笔记：计算 Arbitrum 转账 Gas 费用
+
+### 1. 功能实现
+* **动态获取 Gas Price**：拒绝硬编码，通过 `provider.get_gas_price()` 实时从 Arbitrum Sepolia 获取链上 Gas 价格（单位：wei），确保计算结果的实时性。
+* **物理公式计算**：严格执行以下公式进行预估计算：
+  $$Gas\ Fee = Gas\ Price \times Gas\ Limit$$
+  针对标准 ETH 转账，设置 `Gas Limit` 为行业通用值 **21,000**。
+* **环境变量管理**：引入 `dotenvy` 库，将 `TARGET_ADDRESS` 存储在根目录的 `.env` 文件中，实现配置与代码逻辑的解耦。
+
+### 2. 运行结果验证
+* **计算逻辑**：程序成功通过 RPC 节点获取实时价格，并完成从 `wei` 到 `ETH` 的单位换算。
+* **相关截图**：
+![Task-3 运行成功截图](./docs/task3/gas_result.png)
+
+> **注**：由于 Arbitrum 属于 Layer 2 网络，其实际转账费用极低，预估费用通常在 $10^{-6}$ ETH 数量级。
+
+---
+
 📁 仓库说明
 * **/docs**: 存放任务相关的操作截图及详细说明文档。
 * **/hello_web3**: Task-1 的 Rust 工程源代码。
+* **/level2-balance-query**: Task-2 的 Rust 工程源代码。
+* **/task3-gas-estimation**: Task-3 的 Rust 工程源代码。
 * **LICENSE**: 本项目采用 MIT 开源许可证。
 
 📜 许可证 (License)

@@ -1,22 +1,27 @@
 use ethers::prelude::*;
-use std::convert::TryFrom;
 use eyre::Result;
 use ethers::utils; 
-#[allow(unused_imports)]
-use ethers::prelude::*;
+use std::env;          // 🚀 必须添加这一行，否则无法使用 env::var
+use dotenvy::dotenv;   // 引入 dotenv 加载工具    
 
 #[tokio::main]
 async fn main() -> Result<()> {
     // 1. 设置 RPC URL
-    // 使用你之前验证成功的 Arbitrum Sepolia 官方节点
     let rpc_url = "https://sepolia-rollup.arbitrum.io/rpc";
     
     // 2. 实例化 Provider
     let provider = Provider::<Http>::try_from(rpc_url)?;
 
-    // 3. 设置要查询的地址
-    // 建议替换为你自己的钱包地址，以便截图证明
-    let target_address = "0xa8fF167e4f362B54FF612546a782A301BD521a0B".parse::<Address>()?;
+    // 3. 加载配置并解析地址
+    // 加载根目录或上级目录的 .env 文件
+    dotenv().ok(); 
+    
+    // 从环境变量读取地址字符串
+    let address_str = env::var("TARGET_ADDRESS")
+        .expect("在 .env 文件中未找到 TARGET_ADDRESS，请检查根目录是否有该文件");
+    
+    // 解析地址字符串为 Address 类型
+    let target_address = address_str.parse::<Address>()?;
 
     println!("正在查询 Arbitrum Sepolia 地址余额...");
     println!("📍 地址: {:?}", target_address);
