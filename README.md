@@ -23,14 +23,14 @@ cargo run -p task4-transaction
 
 ## 📦 项目结构
 
-```
+
 crates/
 ├── web3-utils/              # 共享库
 ├── task1-hello-web3/        # Task-1（Alloy）
 ├── task2-balance-query/     # Task-2（Ethers）
 ├── task3-gas-estimation/    # Task-3: Gas 估算（Ethers）
 └── task4-transaction/       # Task-4: 转账脚本（Ethers）
-```
+
 
 **架构优势**：Workspace 统一管理，支持 Alloy 和 Ethers 双库，代码复用 80%
 
