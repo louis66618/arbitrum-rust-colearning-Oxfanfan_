@@ -1,9 +1,13 @@
 [package]
-name = "task4-transaction"
+name = "task5-contract-call"
 version.workspace = true
 edition.workspace = true
 authors.workspace = true
 license.workspace = true
+
+[[bin]]
+name = "contract_call"
+path = "src/main.rs"
 
 [dependencies]
 web3-utils = { path = "../web3-utils" }
