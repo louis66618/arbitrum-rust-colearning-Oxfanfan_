@@ -4,7 +4,8 @@ members = [
     "crates/task1-hello-web3",
     "crates/task2-balance-query",
     "crates/task3-gas-estimation",
-    "crates/task4-transaction",
+    "crates/task4-transaction", 
+    "crates/task5-contract-call",
 ]
 resolver = "2"
 
@@ -16,7 +17,7 @@ license = "MIT"
 
 [workspace.dependencies]
 # Alloy - 新一代 Web3 库（推荐用于新项目）
-alloy = { version = "0.1", features = ["full"] }
+alloy = { version = "0.6", features = ["full"] }
 alloy-primitives = "0.7"
 
 # Ethers - 成熟稳定的 Web3 库（向后兼容）

@@ -43,6 +43,9 @@ Thumbs.db
 rustup-init.exe
 *.tmp
 *.temp
+WORKSPACE_GUIDE.md
+WEB3_API_REFERENCE.md
+CHANGELOG.md
 
 # --- 操作系统 ---
 # macOS

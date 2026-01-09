@@ -1,5 +1,5 @@
 # ============================================================================
-# Arbitrum Rust 学习项目 - 快速运行脚本
+# Arbitrum Rust Learning Project - Task Runner Script
 # ============================================================================
 
 param(
@@ -9,55 +9,63 @@ param(
 
 $buildFlag = if ($Release) { "--release" } else { "" }
 
-Write-Host "🚀 Arbitrum Rust 学习项目 - 任务运行器" -ForegroundColor Cyan
-Write-Host "========================================" -ForegroundColor Cyan
+Write-Host "Arbitrum Rust Learning Project - Task Runner" -ForegroundColor Cyan
+Write-Host "===========================================" -ForegroundColor Cyan
 
 switch ($Task) {
     "1" {
-        Write-Host "`n▶️  运行 Task-1: Hello Web3 (Alloy)" -ForegroundColor Green
+        Write-Host "`nRunning Task-1: Hello Web3 (Alloy)" -ForegroundColor Green
         cargo run -p task1-hello-web3 $buildFlag
     }
     "2" {
-        Write-Host "`n▶️  运行 Task-2: 余额查询 (Ethers)" -ForegroundColor Green
+        Write-Host "`nRunning Task-2: Balance Query (Ethers)" -ForegroundColor Green
         cargo run -p task2-balance-query $buildFlag
     }
     "3" {
-        Write-Host "`n▶️  运行 Task-3: Gas 估算 (Ethers)" -ForegroundColor Green
+        Write-Host "`nRunning Task-3: Gas Estimation (Ethers)" -ForegroundColor Green
         cargo run -p task3-gas-estimation $buildFlag
+    }
+    "4" {
+        Write-Host "`nRunning Task-4: Transaction Script (Ethers)" -ForegroundColor Green
+        cargo run -p task4-transaction $buildFlag
     }
     "all" {
-        Write-Host "`n▶️  运行所有 Tasks" -ForegroundColor Green
-        Write-Host "`n📍 Task-1: Hello Web3" -ForegroundColor Yellow
+        Write-Host "`nRunning All Tasks" -ForegroundColor Green
+        Write-Host "`nTask-1: Hello Web3" -ForegroundColor Yellow
         cargo run -p task1-hello-web3 $buildFlag
         
-        Write-Host "`n📍 Task-2: 余额查询" -ForegroundColor Yellow
+        Write-Host "`nTask-2: Balance Query" -ForegroundColor Yellow
         cargo run -p task2-balance-query $buildFlag
         
-        Write-Host "`n📍 Task-3: Gas 估算" -ForegroundColor Yellow
+        Write-Host "`nTask-3: Gas Estimation" -ForegroundColor Yellow
         cargo run -p task3-gas-estimation $buildFlag
+        
+        Write-Host "`nTask-4: Transaction Script" -ForegroundColor Yellow
+        cargo run -p task4-transaction $buildFlag
     }
     "check" {
-        Write-Host "`n▶️  检查所有项目编译" -ForegroundColor Green
+        Write-Host "`nChecking All Projects" -ForegroundColor Green
         cargo check --workspace
     }
     "test" {
-        Write-Host "`n▶️  运行所有测试" -ForegroundColor Green
+        Write-Host "`nRunning All Tests" -ForegroundColor Green
         cargo test --workspace
     }
     "build" {
-        Write-Host "`n▶️  构建所有项目" -ForegroundColor Green
+        Write-Host "`nBuilding All Projects" -ForegroundColor Green
         cargo build --workspace $buildFlag
     }
     default {
-        Write-Host "`n❌ 未知的任务: $Task" -ForegroundColor Red
-        Write-Host "`n用法:" -ForegroundColor Yellow
-        Write-Host "  .\run_tasks.ps1 1              # 运行 Task-1"
-        Write-Host "  .\run_tasks.ps1 2              # 运行 Task-2"
-        Write-Host "  .\run_tasks.ps1 3              # 运行 Task-3"
-        Write-Host "  .\run_tasks.ps1 all            # 运行所有 Tasks"
-        Write-Host "  .\run_tasks.ps1 check          # 检查编译"
-        Write-Host "  .\run_tasks.ps1 test           # 运行测试"
-        Write-Host "  .\run_tasks.ps1 build          # 构建项目"
-        Write-Host "  .\run_tasks.ps1 1 -Release     # 以 Release 模式运行"
+        Write-Host "`nUnknown task: $Task" -ForegroundColor Red
+        Write-Host "`nUsage:" -ForegroundColor Yellow
+        Write-Host "  .\run_tasks.ps1 1              # Run Task-1"
+        Write-Host "  .\run_tasks.ps1 2              # Run Task-2"
+        Write-Host "  .\run_tasks.ps1 3              # Run Task-3"
+        Write-Host "  .\run_tasks.ps1 4              # Run Task-4"
+        Write-Host "  .\run_tasks.ps1 all            # Run All Tasks"
+        Write-Host "  .\run_tasks.ps1 check          # Check Compilation"
+        Write-Host "  .\run_tasks.ps1 test           # Run Tests"
+        Write-Host "  .\run_tasks.ps1 build          # Build Project"
+        Write-Host "  .\run_tasks.ps1 1 -Release     # Run in Release Mode"
     }
 }
