@@ -4,6 +4,7 @@ members = [
     "crates/task1-hello-web3",
     "crates/task2-balance-query",
     "crates/task3-gas-estimation",
+    "crates/task4-transaction",
 ]
 resolver = "2"
 

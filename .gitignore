@@ -30,6 +30,7 @@ Cargo.lock
 *~
 .DS_Store
 Thumbs.db
+.kiro/
 
 # --- 环境和配置 ---
 # 本地环境变量（包含敏感信息）

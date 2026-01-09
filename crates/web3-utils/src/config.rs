@@ -12,6 +12,8 @@ pub struct Config {
     pub arbitrum_sepolia_rpc: String,
     /// 目标钱包地址
     pub target_address: String,
+    //  私钥字段 (Optional)
+    pub private_key: Option<String>,
 }
 
 impl Config {
@@ -25,9 +27,13 @@ impl Config {
         let target_address = env::var("TARGET_ADDRESS")
             .unwrap_or_else(|_| "0xa8fF167e4f362B54FF612546a782A301BD521a0B".to_string());
 
+        //  新增：读取私钥
+        let private_key = env::var("PRIVATE_KEY").ok();
+
         Ok(Config {
             arbitrum_sepolia_rpc,
             target_address,
+            private_key,
         })
     }
 
@@ -36,6 +42,7 @@ impl Config {
         Config {
             arbitrum_sepolia_rpc: "https://sepolia-rollup.arbitrum.io/rpc".to_string(),
             target_address: "0xa8fF167e4f362B54FF612546a782A301BD521a0B".to_string(),
+            private_key: None,
         }
     }
 }

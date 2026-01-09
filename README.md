@@ -10,15 +10,16 @@ cd arbitrum-rust-colearning
 
 # 配置环境
 cp .env.example .env
+# ⚠️ 注意：运行 Task-4 前需在 .env 中配置 PRIVATE_KEY
 
 # 运行 Task
 cargo run -p task1-hello-web3
 cargo run -p task2-balance-query
 cargo run -p task3-gas-estimation
+cargo run -p task4-transaction
 
 # 或使用脚本（Windows）
 .\run_tasks.ps1 all
-```
 
 ## 📦 项目结构
 
@@ -27,7 +28,8 @@ crates/
 ├── web3-utils/              # 共享库
 ├── task1-hello-web3/        # Task-1（Alloy）
 ├── task2-balance-query/     # Task-2（Ethers）
-└── task3-gas-estimation/    # Task-3（Ethers）
+├── task3-gas-estimation/    # Task-3: Gas 估算（Ethers）
+└── task4-transaction/       # Task-4: 转账脚本（Ethers）
 ```
 
 **架构优势**：Workspace 统一管理，支持 Alloy 和 Ethers 双库，代码复用 80%
@@ -46,7 +48,12 @@ crates/
 ### Task-3: Gas 估算（Ethers）
 动态获取 Gas 价格，计算转账费用
 - 代码：`crates/task3-gas-estimation/src/main.rs`
-
+  
+### Task-4: 转账脚本（Ethers）
+读取私钥，签名并发送 ETH 转账交易
+- 代码：`crates/task4-transaction/src/main.rs`
+- 安全提示：私钥仅保存在本地 .env，禁止上传 GitHub
+  
 ## 🛠 环境搭建排坑
 
 ### 1. 钱包网络配置
@@ -80,6 +87,25 @@ winget install Rustlang.Rustup
 初次运行遇到 429 错误，更换为 Arbitrum 官方 RPC 节点解决
 
 ![hello_web3运行成功](./docs/task1/hello_web3_success.png)
+
+### 5.链上转账
+在编写转账脚本时，ethers-rs 常见的两个编译错误及解法：
+
+* **找不到函数 (`not found in this scope`)**
+    `parse_ether` 等工具函数不在 prelude 中，需手动引入：
+    ```rust
+    use ethers::utils::parse_ether;
+    ```
+
+* **类型推断失败 (`type annotations needed`)**
+    `send_transaction` 返回的 `PendingTransaction` 无法自动推断底层 Provider 类型（如 Http/Ws）。需显式标注：
+    ```rust
+    use ethers::providers::{Http, PendingTransaction};
+    // ...
+    let pending_tx: PendingTransaction<'_, Http> = client.send_transaction(tx, None).await?;
+    ```
+![transaction转账成功](./docs/task4/transaction_success.png)
+![浏览器查看:https://sepolia.arbiscan.io/tx/0x59908a311560759fdce85cf68b1f89886d66c2dd41361fe0c6fe137cadee9058](./docs/task4/transaction%20in%20Arbitrum.png)
 
 ## 📚 文档
 
