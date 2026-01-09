@@ -11,9 +11,49 @@ HackQuest Arbitrum的共学营学习项目
 
 ---
 
+## 📦 项目架构升级
+
+本项目已升级为 **Cargo Workspace** 架构，支持 Alloy 和 Ethers 双库共存：
+
+```
+crates/
+├── web3-utils/              # 共享库（Provider 工厂、工具函数、配置管理）
+├── task1-hello-web3/        # Task-1: 基础连接（Alloy）
+├── task2-balance-query/     # Task-2: 余额查询（Ethers）
+└── task3-gas-estimation/    # Task-3: Gas 估算（Ethers）
+```
+
+### 快速运行
+
+```bash
+# 运行单个 Task
+cargo run -p task1-hello-web3
+cargo run -p task2-balance-query
+cargo run -p task3-gas-estimation
+
+# 或使用 PowerShell 脚本（Windows）
+.\run_tasks.ps1 1              # Task-1
+.\run_tasks.ps1 all            # 全部
+```
+
+详见 `WORKSPACE_GUIDE.md` 和 `QUICK_REFERENCE.md`。
+
+---
+
 ## 🛠 Task-1 实践笔记
 
-在搭建 Arbitrum Sepolia 测试网环境时，由于网络环境（VPN）限制，遇到并解决了以下问题：
+### 项目实现
+
+本 Task 使用 **Alloy 0.1**（新一代 Web3 框架）实现，代码位置：`crates/task1-hello-web3/src/main.rs`
+
+**核心功能**：连接 Arbitrum Sepolia 测试网，获取最新区块高度
+
+```rust
+let provider = ProviderBuilder::new().on_http(rpc_url);
+let block_num = provider.get_block_number().await?;
+```
+
+### 环境搭建排坑记录
 
 ### 1. 钱包网络配置
 * **痛点**：通过 `chainlist.org` 自动添加网络时，受 VPN 影响，MetaMask 往往无法弹出确认框。
@@ -52,7 +92,19 @@ HackQuest Arbitrum的共学营学习项目
 
 ## 🛠 Task-2 实践笔记：查询 Arbitrum 测试网地址余额
 
-### 1. 功能实现
+### 项目实现
+
+本 Task 使用 **Ethers 2.0**（成熟稳定库）实现，代码位置：`crates/task2-balance-query/src/main.rs`
+
+**核心功能**：查询指定地址的 ETH 余额，并转换为可读格式
+
+```rust
+let provider = Provider::<Http>::try_from(rpc_url)?;
+let balance = provider.get_balance(address, None).await?;
+let eth = format_ether(balance);
+```
+
+### 功能实现
 * **核心逻辑**：编写 Rust 函数，通过 `ethers-rs` 库连接 Arbitrum Sepolia 节点，查询指定地址的 ETH 余额。
 * **单位转换**：利用 `ethers::utils::format_ether` 将余额从 **wei** 转换为可读的 **ETH** 格式。
 
@@ -70,7 +122,19 @@ HackQuest Arbitrum的共学营学习项目
 
 ## 🛠 Task-3 实践笔记：计算 Arbitrum 转账 Gas 费用
 
-### 1. 功能实现
+### 项目实现
+
+本 Task 使用 **Ethers 2.0** 实现，代码位置：`crates/task3-gas-estimation/src/main.rs`
+
+**核心功能**：动态获取 Gas 价格，计算标准转账的预估费用
+
+```rust
+let gas_price = provider.get_gas_price().await?;
+let gas_limit = U256::from(21000);
+let fee = gas_price * gas_limit;
+```
+
+### 功能实现
 * **动态获取 Gas Price**：拒绝硬编码，通过 `provider.get_gas_price()` 实时从 Arbitrum Sepolia 获取链上 Gas 价格（单位：wei），确保计算结果的实时性。
 * **物理公式计算**：严格执行以下公式进行预估计算：
   $$Gas\ Fee = Gas\ Price \times Gas\ Limit$$
@@ -88,19 +152,76 @@ HackQuest Arbitrum的共学营学习项目
 
 ## 🚀 如何运行 (How to Run)
 
+### 前置要求
+- Rust 1.75+ （支持 Edition 2024）
+- Cargo
+
+### 方式 1：使用 Cargo 命令
+
+```bash
+# 运行单个 Task
+cargo run -p task1-hello-web3
+cargo run -p task2-balance-query
+cargo run -p task3-gas-estimation
+
+# 检查编译
+cargo check --workspace
+
+# 构建项目
+cargo build --workspace
+```
+
+### 方式 2：使用 PowerShell 脚本（Windows）
+
+```powershell
+# 运行单个 Task
+.\run_tasks.ps1 1              # Task-1
+.\run_tasks.ps1 2              # Task-2
+.\run_tasks.ps1 3              # Task-3
+
+# 运行所有 Tasks
+.\run_tasks.ps1 all
+
+# Release 模式
+.\run_tasks.ps1 1 -Release
+```
+
+### 环境配置
+
 克隆本项目后，请按照以下步骤操作：
 
-1. **创建配置文件**：在项目根目录下新建一个名为 `.env` 的文件。
-2. **配置变量**：在 `.env` 中添加你的测试地址，格式如下：
+1. **复制示例配置**：
+   ```bash
+   cp .env.example .env
+   ```
+
+2. **编辑配置文件**：在 `.env` 中修改你的钱包地址（可选，已有默认值）：
    ```text
    TARGET_ADDRESS=你的钱包地址
-   
+   ARBITRUM_SEPOLIA_RPC=https://sepolia-rollup.arbitrum.io/rpc
+   ```
+
+> **注意**：`.env` 文件包含敏感信息，已在 `.gitignore` 中配置，不会被提交到 Git。
 📁 仓库说明
+
 * **/docs**: 存放任务相关的操作截图及详细说明文档。
-* **/hello_web3**: Task-1 的 Rust 工程源代码。
-* **/level2-balance-query**: Task-2 的 Rust 工程源代码。
-* **/task3-gas-estimation**: Task-3 的 Rust 工程源代码。
+* **/crates**: Workspace 中的所有项目
+  * **web3-utils**: 共享库（Provider 工厂、工具函数、配置管理）
+  * **task1-hello-web3**: Task-1 的 Rust 工程源代码（Alloy）
+  * **task2-balance-query**: Task-2 的 Rust 工程源代码（Ethers）
+  * **task3-gas-estimation**: Task-3 的 Rust 工程源代码（Ethers）
 * **LICENSE**: 本项目采用 MIT 开源许可证。
+
+### 文档导航
+
+详见 `DOCS.md` 文档导航。
+
+| 文档 | 说明 |
+|------|------|
+| `README.md` | 项目说明和排坑记录（本文件） |
+| `WORKSPACE_GUIDE.md` | Workspace 架构详细指南 |
+| `VERIFICATION_REPORT.md` | 功能验证报告 |
+| `DOCS.md` | 文档导航和使用指南 |
 
 📜 许可证 (License)
 本项目采用 MIT License。详情请参阅 LICENSE 文件。

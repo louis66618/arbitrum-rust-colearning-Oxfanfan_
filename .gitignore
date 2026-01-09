@@ -1,23 +1,74 @@
-# --- Rust 相关 ---
-# 忽略编译产物文件夹（最占用空间，且会导致推送失败）
+# ============================================================================
+# Rust 项目 .gitignore 配置
+# 目标：最小化上传，保持可克隆和运行
+# ============================================================================
+
+# --- Rust 编译产物 ---
+# 忽略编译输出目录（最占用空间）
 target/
 **/target/
 
-# 忽略 Cargo 自动生成的临时文件
+# 忽略 Cargo 锁文件（会自动生成）
 Cargo.lock
 
-# --- Windows & 编译调试相关 ---
-# 忽略导致 100MB 报错的调试数据库文件
+# --- 调试和编译文件 ---
+# Windows 调试数据库（100MB+）
 *.pdb
+
+# 编译产物
 *.exe
 *.dll
 *.rlib
+*.so
+*.dylib
 
-# --- 个人文件 ---
-# 忽略你之前保留在根目录的安装包
-rustup-init.exe
-.DS_Store
+# --- IDE 和编辑器 ---
 .vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
 
-# 忽略配置文件
+# --- 环境和配置 ---
+# 本地环境变量（包含敏感信息）
 .env
+.env.local
+.env.*.local
+
+# --- 临时文件 ---
+# 安装程序
+rustup-init.exe
+*.tmp
+*.temp
+
+# --- 操作系统 ---
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+.directory
+
+# --- 项目特定 ---
+# 旧项目目录（已迁移到 crates/）
+# 注：这些已被删除，此处仅作备注
+# hello_web3/
+# level2-balance-query/
+# task3-gas-estimation/
+
+# --- 保留的文件 ---
+# 以下文件应该被提交到 Git：
+# ✅ Cargo.toml（所有项目）
+# ✅ src/（源代码）
+# ✅ README.md 和其他文档
+# ✅ .env.example（示例配置，不含敏感信息）
+# ✅ LICENSE
+# ✅ run_tasks.ps1（脚本）

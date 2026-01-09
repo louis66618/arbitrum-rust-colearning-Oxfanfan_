@@ -1,0 +1,39 @@
+[workspace]
+members = [
+    "crates/web3-utils",
+    "crates/task1-hello-web3",
+    "crates/task2-balance-query",
+    "crates/task3-gas-estimation",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+authors = ["Louis"]
+license = "MIT"
+
+[workspace.dependencies]
+# Alloy - 新一代 Web3 库（推荐用于新项目）
+alloy = { version = "0.1", features = ["full"] }
+alloy-primitives = "0.7"
+
+# Ethers - 成熟稳定的 Web3 库（向后兼容）
+ethers = { version = "2.0", features = ["rustls"] }
+
+# 异步运行时
+tokio = { version = "1.0", features = ["full"] }
+
+# 错误处理
+eyre = "0.6"
+
+# 环境变量管理
+dotenvy = "0.15"
+
+# 日志
+tracing = "0.1"
+tracing-subscriber = "0.3"
+
+# 序列化
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
